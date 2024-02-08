@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(10, 30, 35);
+}
+.nav-bar{
+    height: 10vh;
+    animation: fadeIn 2s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+}
+.nav-left .nav-right{
+    height: 100px;
+}
+h2 > a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    padding-top: 5px;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+.about-me{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 70vh;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.cody-hume-pic{
+    margin-top: 25px;
+    justify-self: center;
+    grid-row-start: span 3;
+}
+
+.about-me-title > h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 75px;
+    margin-top: 50px;
+    animation: fadeIn 2s;
+}
+.about-me-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.about-me-button > button{
+    color: white;
+    margin-bottom: 25px;
+    background-color: rgb(176, 65, 35);
+}
+.portfolio > *{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    color: white;
+    margin: 50px;
+    margin-bottom: 100px;
+}
+.portfolio-title{
+    margin: 50px;
+    display: block;
+    text-align: center;
+    font-size: 75px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.col-lg-4{
+    justify-content: center;
+}
+.row{
+    justify-content: center;
+}
+.preview-image > *{
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 50%; 
+    height: 300px; 
+    width: 300px;
+}
+.resume{
+    height: 70vh;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 75px;
+    background-color: rgb(65, 121, 105);
+    text-align: center;
+}
+.resume-pic{
+    display: inline-block;
+}
+.footer{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(176, 65, 35);
+}
+
+@media screen and (max-width: 980px) {
+    .about-me {
+      display: block;
+      height: fit-content;
+      text-align: center;
+    }
+    .portfolio > *{
+        text-align: center;
+        display: block;
+    }
+  }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
