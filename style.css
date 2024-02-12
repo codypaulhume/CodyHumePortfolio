@@ -120,6 +120,26 @@ h2 > a{
     }
   }
 
+  @media screen and (max-width: 430px) {
+    .about-me {
+      display: block;
+      height: fit-content;
+      text-align: center;
+    }
+    .portfolio > *{
+        text-align: center;
+        display: block;
+    }
+    .nav-item h2{
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
+    .resume{
+     font-size: 35px;
+    }
+  }
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
